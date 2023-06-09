@@ -1,0 +1,19 @@
+name: im_themed
+description: A new Flutter package project.
+version: 0.0.1
+repository: https://github.com/i-m-cyber/im_thmed
+
+environment:
+  sdk: '>=3.0.2 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
