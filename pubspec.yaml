@@ -1,6 +1,6 @@
 name: im_themed
 description: package for parsing flutter theme from json, with support for css like syntax
-version: 0.0.2
+version: 0.0.3
 repository: https://github.com/i-m-cyber/im_themed
 
 environment:
