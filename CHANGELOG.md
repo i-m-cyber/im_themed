@@ -1,3 +1,7 @@
+## 0.0.2
+
+* google_fonts dependency removed
+
 ## 0.0.1
 
 * Added parsing for Color and Font
