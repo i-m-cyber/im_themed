@@ -8,9 +8,9 @@ environment:
   flutter: '>=3.0.0'
 
 dependencies:
-  csslib: ^1.0.0
   flutter:
     sdk: flutter
+  # csslib: ^1.0.0
   # google_fonts: ^5.0.0
   json_annotation: ^4.8.1
   source_span: ^1.9.1

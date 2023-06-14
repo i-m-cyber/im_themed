@@ -1,3 +1,7 @@
+## 0.0.3
+
+* csslib dependency removed
+
 ## 0.0.2
 
 * google_fonts dependency removed
