@@ -46,7 +46,9 @@ TextStyle parseCssFont(String cssFontValue) {
   Color? fontColor;
 
   Expression? previousExp;
-  for (var exp in declaration.expressions) {
+  for (var i = 0; i < declaration.expressions.length; i++) {
+    final exp = declaration.expressions[i];
+    final isLast = i == declaration.expressions.length - 1;
     // exp is line-height
     if (fontSize != null && (exp is LengthTerm || exp is NumberTerm)) {
       if (previousExp is! OperatorSlash) {
@@ -80,7 +82,7 @@ TextStyle parseCssFont(String cssFontValue) {
       }
 
       // exp should be font-weight or font-style
-      if (fontSize == null) {
+      if (fontSize == null && !isLast) {
         if (exp is NumberTerm) {
           fontWeight = parseCssFontWeight(exp.text);
         } else if (exp is LiteralTerm) {

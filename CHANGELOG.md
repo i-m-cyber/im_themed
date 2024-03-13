@@ -1,3 +1,7 @@
+## 0.0.4
+
+* improved font parsing
+
 ## 0.0.3
 
 * csslib dependency removed
