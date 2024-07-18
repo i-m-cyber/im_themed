@@ -1,3 +1,7 @@
+## 0.0.5
+
+* rebuild on theme change
+
 ## 0.0.4
 
 * improved font parsing

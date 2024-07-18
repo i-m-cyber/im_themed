@@ -7,8 +7,8 @@ class ImThemeController extends ChangeNotifier {
 
   ThemeData get theme => _currentTheme;
 
-  void setTheme(ThemeData theme) {
+  void setTheme(ThemeData theme, {bool notify = true}) {
     _currentTheme = theme;
-    notifyListeners();
+    if (notify) notifyListeners();
   }
 }

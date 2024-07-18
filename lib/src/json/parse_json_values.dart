@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 ///
@@ -63,7 +65,7 @@ Map<String, dynamic> parseJsonValues({
             [dataValue],
           );
         } catch (error) {
-          print('parseJsonValues: $error');
+          log('parseJsonValues: $error');
         }
 
         if (useCache) {
