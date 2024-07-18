@@ -25,7 +25,12 @@ class _ImThemedAppState extends State<ImThemedApp> {
   @override
   void initState() {
     super.initState();
-    controller.addListener(() => setState(() {}));
+    controller.addListener(() {
+      setState(() {
+        /// set theme
+        controller.setTheme(widget.initialTheme ?? ThemeData(), notify: false);
+      });
+    });
   }
 
   @override

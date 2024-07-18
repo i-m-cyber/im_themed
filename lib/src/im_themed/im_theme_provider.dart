@@ -4,11 +4,13 @@ import 'package:im_themed/src/im_themed/im_theme_controller.dart';
 class ImThemeProvider extends InheritedWidget {
   final ImThemeController controller;
 
-  const ImThemeProvider({
+  ImThemeProvider({
     super.key,
     required super.child,
     required this.controller,
-  });
+  }) {
+    controller.setTheme(controller.theme, notify: true);
+  }
 
   static ImThemeProvider? maybeOf(BuildContext context) {
     return context.dependOnInheritedWidgetOfExactType<ImThemeProvider>();
